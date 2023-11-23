@@ -1,0 +1,633 @@
+@media screen and (min-width: 1025px) and (max-width: 1650px){
+    nav .home-logo{
+        margin-left: 50px;
+    }
+    nav .navigation{
+        width: 75%;
+        padding-left: 10px;
+        border-radius: 20px 0 0 20px;
+    }
+    nav .navigation::before{
+        margin-left: -200px;
+    } 
+    nav .navigation ul{
+        font-size: 26px;
+    }  
+    .home{
+        padding: 15em 5em  0 5em;
+    }
+    .destination{
+        padding: 0 50px;
+        justify-content: center;
+    }
+    .destination h4{
+        font-size: 27px;
+    }
+    .destination .destinationcontent{
+        margin-top: 0;
+        justify-content: space-around;
+    }
+    .destinationcontent .planetIcon{
+        width: 400px;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .destinationcontent .destinationNavigation{
+        width: 500px;
+    }
+    .destinationNavigation .navbar ul{
+        font-size: 26px;
+    }
+    .destinationNavigation h5{
+        font-size: 27px;
+    }
+    .area-distance{
+        padding-right: 100px;
+    }
+    .Crew{
+        padding: 90px;
+        padding-bottom: 0;
+    }
+    .Crew .crewBody{
+        margin-top: 100px;
+    }
+    .Crew .crewComander{
+        padding: 10px;
+    }
+    .crewComander .crewcontentall{
+      margin-top: 50px;
+    }
+    .crewBody .crewPicture{
+        height: 400px;
+    }
+    .technology{
+        padding: 50px;
+        padding-bottom: 0;
+    }
+    .technolgyBody{
+        padding: 20px;
+        padding-top: 70px;
+    }
+    .technolgyBody h4{
+        font-size: 24px;
+    }
+    .technolgyBody .technologycontent{
+        justify-content:center;
+        width: 100%;
+    }
+    .technolgyBody .techNavbar{
+        height: 300px;
+    }
+    .technolgyBody .techNavbar button{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .technologycontentarea h5{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .technologycontentarea h2{
+        font-size: 40px;
+        margin: 15px 0;
+    }
+    .navbarAndcontentarea{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .technolgyBody .technologypicture{
+        width: 500px;
+        height: 320px;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        overflow: hidden;
+    }
+    nav{
+        height: 90px;
+        margin-top: 0;
+    }
+    nav .home-logo{
+        margin-left: 50px;
+    }
+    nav .navigation{
+        width: 75%;
+        padding-left: 10px;
+        border-radius: 0 0 0 30px;
+    }
+    nav .navigation::before{
+       display: none
+    }
+    nav .navigation ul{
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 23px;
+        font-weight: 500;
+        margin:0;
+    }
+    nav .navigation ul li:nth-child(1)::before{
+        content: "";
+    }
+    nav .navigation ul li:nth-child(2)::before{
+        content: "";
+    }
+    nav .navigation ul li:nth-child(3)::before{
+        content: "";
+    }
+    nav .navigation ul li:nth-child(4)::before{
+        content: "";
+    }
+    .home{
+        padding: 50px 50px 0 20px;
+        background: url('./assets/home/background-home-tablet.jpg') no-repeat center / cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .home .content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .home .content-text h1{
+        font-size: 150px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    .home .content-text h4{
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .home .content-text h5{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 50px;
+    }
+    .home .ExploreIcon{
+        margin-left: 0;
+    }
+    .ExploreIcon .content-explore h5{
+        left: 70%;
+    }
+
+    /* Destination section */
+
+    .destination{
+        padding:160px 70px 0 70px ;
+    }
+    .destination h4{
+        font-size: 25px;
+    }
+    .destination .destinationcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 500px;
+        margin-top:0;
+    }
+    .destinationcontent .planetIcon{
+        width: 300px;
+        height: 300px;
+    }
+    .destinationcontent .destinationNavigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .destinationNavigation .navbar{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .destinationNavigation .navbar ul{
+        gap: 20px;
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .destinationNavigation h2{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .destinationNavigation p{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .destinationNavigation h5{
+        text-align: center;
+    }
+    .area-distance{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* crew section */
+
+    .Crew{
+        padding: 150px 20px 0 20px;
+    }
+    .Crew .crewBody{
+        flex-direction: column;
+        padding-right: 0;
+    }
+    .Crew .crewBody .crewbodycontent{
+        width: 100%;
+        text-align: center;
+    }
+    .Crew .crewComander{
+        padding: 0 20px;
+    }
+    .crewComander .crewcontentall{
+        padding:5px 20px;
+        margin-top: 30px;
+        min-height: 100px;
+    }
+    .crewComander h4{
+        font-size: 26px;
+        position: absolute;
+    }
+    .crewComander h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .crewComander h1{
+        font-size: 35px;
+    }
+    .crewComander p{
+        margin: 25px 0;
+        padding: 0 60px;
+        font-size: 16px;
+    }
+    .crewbodycontent .crewnavigation{
+        margin-top: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .crewpictureforalignment{
+        height: 400px;
+        width: 100%;
+    }
+
+    /* Technology section */
+    .technology{
+        padding: 120px 0 0 0;
+        overflow: scroll;
+    }
+    .technolgyBody{
+        padding: 0 30px;
+    }
+    .technolgyBody h4{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    .technolgyBody .technologycontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:unset;
+        top: 0;
+    }
+    .navbarAndcontentarea{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .technolgyBody .techNavbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    .technolgyBody .techNavbar button{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .technolgyBody .technologypicture{
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        background: url('./assets/technology/image-launch-vehicle-landscape.jpg') no-repeat center / cover  ;
+    }
+    .technologycontentarea{
+        padding: 0;
+    }
+    .technologycontentarea h5{
+        font-size: 19px;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .technologycontentarea h2{
+        font-size: 35px;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .technologycontentarea p{
+        font-size: 19px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    body{
+        overflow: scroll;
+    }
+    nav{
+        height: 90px;
+        margin-top: 0;
+        padding: 0;
+        padding-left: 20px;
+        z-index: 1111;
+    }
+    nav .home-logo{
+        width: 35px;
+        height: 35px;
+        margin-left:0;
+    }
+    nav .navigation{
+       position: absolute;
+       width: 55%;
+       height: 100vh;
+       top:0;
+       right: 0;
+       padding:0 20px;
+       margin: 0;
+       border-radius:0;
+       background-color: #41404085;
+       justify-content: flex-start;
+       align-items: flex-start;
+       display: none;
+    }
+    nav .navigation::before{
+       display: none;
+    }
+    nav .navigation ul{
+        flex-direction: column;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 25px;
+        gap: 25px;
+        margin-top: 100px;
+
+    }
+    .menuIcon{
+        top: 25px;
+        display:block;
+    }
+    nav .navigation ul a{
+        padding:5px 0;
+    }
+    .home{
+        padding:0;
+        background: url('./assets/home/background-home-mobile.jpg') no-repeat center / cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+    
+    }
+    .home .content-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .home .content-text h1{
+        font-size: 100px;
+    }
+    .home .content-text h5{
+        padding: 0 170px;
+        width: 100%;
+    }
+    .home .ExploreIcon{
+        margin-left: 0;
+    }
+    .ExploreIcon .content-explore h5{
+        left: 70%;
+    }
+
+    /* Destination section */
+
+    .destination{
+        padding:0 100px;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .destination h4{
+        font-size: 22px;
+        text-align: center;
+    }
+    .destination .destinationcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 500px;
+        margin-top:0;
+    }
+    .destinationcontent .planetIcon{
+        width: 250px;
+        height: 250px;
+    }
+    .destinationcontent .destinationNavigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .destinationNavigation .navbar{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .destinationNavigation .navbar ul{
+        gap: 20px;
+        font-size: 26px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    .destinationNavigation h2{
+        margin: 5px 0;
+        text-align: center;
+    }
+    .destinationNavigation p{
+        margin:0;
+        padding: 0 40px;
+        text-align: center;
+    }
+    .destinationNavigation h5{
+        text-align: center;
+    }
+    .area-distance::before{
+        content: "";
+        width: 90%;
+        height: 3px;
+        background-color:  rgba(255, 255, 255, 0.4);
+    }
+    .area-distance{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    /* crew section */
+
+    .Crew{
+        padding:0;
+    }
+    .Crew .crewBody{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding:100px 0 0 0 ;
+        border: 3px solid green;
+    }
+    .Crew .crewBody .crewbodycontent{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .Crew .crewComander{
+        padding: 0 20px;
+    }
+    .crewComander .crewcontentall{
+        padding:5px 20px;
+        min-height: 100px;
+    }
+    .crewComander h4{
+        font-size: 26px;
+        position: absolute;
+        top: 50px;
+        left: 25%;
+    }
+    .crewComander h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .crewComander h1{
+        font-size: 35px;
+    }
+    .crewComander p{
+        margin: 25px 0;
+        padding: 0 20px;
+        font-size: 16px;
+    }
+    .crewbodycontent .crewnavigation{
+        margin-top:10px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .crewpictureforalignment{
+        height: 400px;
+        width: 100%;
+    }
+    .crewpictureforalignment::after{
+        content:"";
+        height: 1px;
+        width: 90%;
+        background-color:rgba(255, 255, 255, 0.3);
+       margin-left: 35px;
+
+    }
+
+    /* Technology section */
+    .technology{
+        padding: 50px 0 0 0;
+        overflow: scroll;
+    }
+    .technolgyBody{
+        padding: 0 30px;
+    }
+    .technolgyBody h4{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    .technolgyBody .technologycontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:unset;
+        top: 0;
+    }
+    .navbarAndcontentarea{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .technolgyBody .techNavbar{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 40px;
+    }
+    .technolgyBody .techNavbar button{
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .technolgyBody .technologypicture{
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        background: url('./assets/technology/image-launch-vehicle-landscape.jpg') no-repeat center / cover  ;
+    }
+    .technologycontentarea{
+        padding: 0;
+    }
+    .technologycontentarea h5{
+        font-size: 19px;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .technologycontentarea h2{
+        font-size: 35px;
+        margin: 25px 0;
+        text-align: center;
+    }
+    .technologycontentarea p{
+        font-size: 16px;
+        padding: 0 100px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
