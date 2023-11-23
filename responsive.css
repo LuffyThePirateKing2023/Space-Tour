@@ -103,7 +103,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
     body{
         overflow: hidden;
     }
@@ -511,7 +511,6 @@
         flex-direction: column-reverse;
         justify-content: center;
         padding:100px 0 0 0 ;
-        border: 3px solid green;
     }
     .Crew .crewBody .crewbodycontent{
         width: 100%;

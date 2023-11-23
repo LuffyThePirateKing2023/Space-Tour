@@ -85,7 +85,7 @@ menuIcon.addEventListener('click', () => {
   }
 });
 navigationIcon.addEventListener('click', (event) => {
-  if (event.target.tagName.toLowerCase() === 'a') {
+  if (window.innerWidth <= 768 && event.target.tagName.toLowerCase() === 'a') {
     navigationIcon.style.display = 'none';
     menuIcon.src = "./assets/shared/icon-hamburger.png";
   }
