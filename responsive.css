@@ -1,9 +1,10 @@
-@media screen and (min-width: 1025px) and (max-width: 1650px){
+@media screen and (min-width: 1300px){
     nav .home-logo{
         margin-left: 50px;
     }
     nav .navigation{
         width: 75%;
+        height: 80px;
         padding-left: 10px;
         border-radius: 20px 0 0 20px;
     }
@@ -11,51 +12,96 @@
         margin-left: -200px;
     } 
     nav .navigation ul{
-        font-size: 26px;
+        font-size: 20px;
     }  
     .home{
-        padding: 15em 5em  0 5em;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    .home .content-text{
+        padding: 200px 0 0 100px;
+    }
+    .home .content-text h1{
+        font-size: 80px;
+        margin: 20px 0;
+    }
+    .home .ExploreIcon{
+        margin-top: 200px;
+        margin-left: 100px;
     }
     .destination{
-        padding: 0 50px;
+        padding: 150px 0 0 50px;
         justify-content: center;
     }
     .destination h4{
-        font-size: 27px;
+        font-size: 17px;
+        width: 350px;
+        position: relative;
+        top: 30px;
     }
     .destination .destinationcontent{
         margin-top: 0;
         justify-content: space-around;
     }
     .destinationcontent .planetIcon{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         margin-top: 100px;
     }
     .destinationcontent .destinationNavigation{
         width: 500px;
     }
     .destinationNavigation .navbar ul{
-        font-size: 26px;
+        font-size: 22px;
+    }
+    .destinationNavigation h2{
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    .destinationNavigation p{
+        font-size: 16px;
+        line-height: 30px;
+        margin: 15px 0;
     }
     .destinationNavigation h5{
-        font-size: 27px;
+        font-size: 20px;
     }
     .area-distance{
         padding-right: 100px;
+        gap: 20px;
     }
     .Crew{
-        padding: 90px;
+        padding: 70px;
         padding-bottom: 0;
     }
     .Crew .crewBody{
-        margin-top: 100px;
+        margin-top: 70px;
     }
     .Crew .crewComander{
         padding: 10px;
     }
     .crewComander .crewcontentall{
-      margin-top: 50px;
+      position: relative;
+      top: -20px;
+      padding: 0 20px;
+    }
+    .crewComander h4{
+        font-size: 22px;
+    }
+    .crewComander h3{
+        font-size: 22px;
+        margin: 20px 0;
+    }
+    .crewComander h1{
+        font-size: 35px;
+    }
+    .crewComander p{
+        font-size: 15px;
+    }
+    .crewbodycontent .crewnavigation{
+        position: relative;
+        top: -100px;
     }
     .crewBody .crewPicture{
         height: 400px;
@@ -65,35 +111,37 @@
         padding-bottom: 0;
     }
     .technolgyBody{
-        padding: 20px;
-        padding-top: 70px;
+        padding: 80px 20px 0 20px;
     }
     .technolgyBody h4{
-        font-size: 24px;
+        font-size: 19px;
     }
     .technolgyBody .technologycontent{
         justify-content:center;
-        width: 100%;
     }
     .technolgyBody .techNavbar{
         height: 300px;
     }
     .technolgyBody .techNavbar button{
-        width: 70px;
-        height: 70px;
-        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
     .technologycontentarea h5{
         font-size: 20px;
         margin: 10px 0;
     }
     .technologycontentarea h2{
-        font-size: 40px;
+        font-size: 30px;
         margin: 15px 0;
+    }
+    .technologycontentarea p{
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 30px;
     }
     .navbarAndcontentarea{
         display: flex;
-        flex-direction: column;
 
     }
     .technolgyBody .technologypicture{
@@ -370,16 +418,16 @@
     }
     nav .navigation{
        position: absolute;
-       width: 55%;
+       width: 100%;
        height: 100vh;
        top:0;
        right: 0;
-       padding:0 20px;
+       padding:100px 20px 0 20px;
        margin: 0;
        border-radius:0;
-       background-color: #41404085;
-       justify-content: flex-start;
-       align-items: flex-start;
+       background-color: #414040f3;
+       justify-content:center;
+       align-items: center;
        display: none;
     }
     nav .navigation::before{
@@ -388,12 +436,17 @@
     nav .navigation ul{
         flex-direction: column;
         flex: 1;
-        justify-content: flex-end;
-        align-items: flex-end;
-        font-size: 25px;
-        gap: 25px;
-        margin-top: 100px;
+        justify-content: center;
+        align-items:center;
+        font-size: 35px;
+        gap: 35px;
+        text-shadow: 0 0 30px #141414dc;
+        margin-top: 150px;
 
+    }
+    nav .navigation ul a:hover{
+        border-bottom: none;
+        transform: none;
     }
     .menuIcon{
         top: 25px;
@@ -572,8 +625,10 @@
         padding: 0 30px;
     }
     .technolgyBody h4{
+        width: 100%;
         font-size: 22px;
         letter-spacing: 3px;
+        text-align: center;
     }
     .technolgyBody .technologycontent{
         width: 100%;
@@ -620,12 +675,13 @@
     }
     .technologycontentarea h2{
         font-size: 35px;
-        margin: 25px 0;
+        margin: 20px 0;
         text-align: center;
     }
     .technologycontentarea p{
+        width: 100%;
         font-size: 16px;
-        padding: 0 100px;
+        padding: 0 150px;
         line-height: 30px;
         text-align: center;
     }

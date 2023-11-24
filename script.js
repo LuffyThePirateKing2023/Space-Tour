@@ -72,21 +72,16 @@ btns.forEach((btn, index) => {
   btn.addEventListener('click', () => handleButtonClick(index));
 });
 
-const menuIcon = document.getElementById('menuIcon');
-const navigationIcon = document.getElementById('homeNav');
+// const menuIcon = document.getElementById('menuIcon');
+// const navigationIcon = document.getElementById('homeNav');
 
-menuIcon.addEventListener('click', () => {
-  if(navigationIcon.style.display === 'none'){
-    navigationIcon.style.display = 'block';
-    menuIcon.src = "./assets/shared/icon-close.png";
-  }else{
-    navigationIcon.style.display = 'none';
-    menuIcon.src = "./assets/shared/icon-hamburger.png";
-  }
-});
-navigationIcon.addEventListener('click', (event) => {
-  if (window.innerWidth <= 768 && event.target.tagName.toLowerCase() === 'a') {
-    navigationIcon.style.display = 'none';
-    menuIcon.src = "./assets/shared/icon-hamburger.png";
-  }
-});
+// menuIcon.addEventListener('click', () => {
+//   if(navigationIcon.style.display === 'none'){
+//     navigationIcon.style.display = 'block';
+//     menuIcon.src = "./assets/shared/icon-close.png";
+//   }else{
+//     navigationIcon.style.display = 'none';
+//     menuIcon.src = "./assets/shared/icon-hamburger.png";
+//   }
+// });
+
