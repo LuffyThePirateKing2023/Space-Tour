@@ -28,6 +28,7 @@ const contentItems = ['moonContent', 'marsContent', 'europaContent', 'titanConte
 
 
 function handleNavigationClick(index, backgroundImage) {
+    event.preventDefault();
     contentItems.forEach(content => content.classList.add('hidden'));
     contentItems[index].classList.remove('hidden');
     destinationcontentIcon.style.backgroundImage = `url('./assets/destination/${backgroundImage}.jpg')`;
@@ -48,6 +49,7 @@ const crewImage = document.getElementById('crewImage');
 const crewImageUrl = ['./assets/crew/commander.jpg', './assets/crew/specialist.jpg', './assets/crew/pilot.jpg', './assets/crew/engineer.jpg'];
 
 function handleCrewClick(index){
+    event.preventDefault();
     crewContents.forEach(content=> content.classList.add('hidden'));
     crewContents[index].classList.remove('hidden');
     crewImage.style.backgroundImage = `url('${crewImageUrl[index]}')`;
@@ -69,6 +71,7 @@ const imageUrls = [
 ];
 
 function handleButtonClick(index) {
+  event.preventDefault();
   techContent.forEach(content => content.classList.add('hidden'));
   techContent[index].classList.remove('hidden');
   techImage.style.backgroundImage = `url('${imageUrls[index]}')`;
