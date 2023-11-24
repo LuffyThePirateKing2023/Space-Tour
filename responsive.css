@@ -886,7 +886,7 @@
         content:"";
         height: 2px;
         width: 95%;
-        background-color:rgba(255, 255, 255, 0.3);
+        background-color:rgba(255, 255, 255, 0.418);
         align-self: center;
 
     }
@@ -988,5 +988,81 @@
         justify-content: center;
         gap: 20px;
         padding: 0;
+    }
+}
+@media only screen 
+and (device-width: 428px) 
+and (device-height: 926px) 
+and (-webkit-device-pixel-ratio: 3) { 
+    .Crew{
+        padding:0;
+        height: auto;
+     
+    }
+    .Crew .crewBody{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding:0;
+        min-height: 100px;
+
+    }
+    .Crew .crewBody .crewbodycontent{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        
+    }
+    .Crew .crewComander{
+        padding: 0 20px;
+    }
+    .crewComander .crewcontentall{
+        padding: 0;
+        width: 100%;
+        margin-bottom: -30px;
+        min-height: 100px;
+    }
+    .crewComander h4{
+        font-size: 17px;
+        position: absolute;
+        top: 100px;
+        left: 17%;
+    }
+    .crewComander h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .crewComander h1{
+        font-size: 26px;
+    }
+    .crewComander p{
+        margin: 10px 0;
+        padding: 0 10px;
+        line-height: 25px;
+        font-size: 14px;
+    }
+    .crewbodycontent .crewnavigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1111;
+    }
+    .crewnavigation button{
+        width: 20px;
+        height: 20px;
+        margin: 20px 5px;
+    }
+    .crewpictureforalignment{
+        margin-top: 150px;
+        height: 350px;
+        width: 100%;
+    }
+    .crewpictureforalignment::after{
+        content:"";
+        height: 2px;
+        width: 95%;
+        background-color:rgba(255, 255, 255, 0.418);
+        align-self: center;
+
     }
 }
