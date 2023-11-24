@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1300px) and (max-width:1440px){
     nav .home-logo{
         margin-left: 50px;
     }
@@ -18,6 +18,8 @@
         padding: 0;
         margin: 0;
         overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
     .home .content-text{
         padding: 200px 0 0 100px;
@@ -33,11 +35,13 @@
     .destination{
         padding: 150px 0 0 50px;
         justify-content: center;
+        align-items: center;
     }
     .destination h4{
-        font-size: 17px;
+        font-size: 20px;
         width: 350px;
-        position: relative;
+        align-items: center;
+        justify-content: center;
         top: 30px;
     }
     .destination .destinationcontent{
@@ -150,17 +154,192 @@
         align-self: center;
     }
 }
+@media screen and (min-width: 1024px) and (max-width:1299px){
+    nav .home-logo{
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    nav .navigation{
+        width: 75%;
+        height: 50px;
+        padding-left: 10px;
+        border-radius: 20px 0 0 20px;
+    }
+    nav .navigation::before{
+        margin-left: -200px;
+    } 
+    nav .navigation ul{
+        font-size: 17px;
+    }  
+    nav .navigation ul a{
+        padding: 10px 0;
+    }
+    .home{
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .content-text{
+        padding: 200px 0 0 100px;
+    }
+    .home .content-text h1{
+        font-size: 80px;
+        margin: 20px 0;
+    }
+    .home .ExploreIcon{
+        margin-top: 200px;
+        margin-left: 100px;
+    }
+    .destination{
+        padding: 150px 0 0 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .destination h4{
+        font-size: 20px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    .destination .destinationcontent{
+        margin-top: 0;
+        justify-content: space-around;
+    }
+    .destinationcontent .planetIcon{
+        width: 300px;
+        height: 300px;
+        margin-top: 100px;
+    }
+    .destinationcontent .destinationNavigation{
+        width: 500px;
+    }
+    .destinationNavigation .navbar ul{
+        font-size: 22px;
+    }
+    .destinationNavigation h2{
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    .destinationNavigation p{
+        font-size: 16px;
+        line-height: 30px;
+        margin: 15px 0;
+    }
+    .destinationNavigation h5{
+        font-size: 20px;
+    }
+    .area-distance{
+        padding-right: 100px;
+        gap: 20px;
+    }
+    .Crew{
+        padding: 70px;
+        padding-bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .Crew .crewBody{
+        margin-top: 70px;
+    }
+    .Crew .crewComander{
+        padding: 10px;
+    }
+    .crewComander .crewcontentall{
+      position: relative;
+      top:0;
+      padding: 0 20px;
+    }
+    .crewsectionContent{
+        margin-top: 120px;
+    }
+    .crewComander h4{
+        font-size: 16px;
+        position: absolute;
+        top: 100px;
+    }
+    .crewComander h3{
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .crewComander h1{
+        font-size: 23px;
+    }
+    .crewComander p{
+        font-size: 15px;
+    }
+    .crewbodycontent .crewnavigation{
+        position: relative;
+        top: -170px;
+    }
+    .crewBody .crewPicture{
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        bottom: 0;
+        left: 53%;
+    }
+    .technology{
+        padding: 50px;
+        padding-bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .technolgyBody{
+        padding: 80px 20px 0 20px;
+    }
+    .technolgyBody h4{
+        font-size: 19px;
+    }
+    .technolgyBody .technologycontent{
+        justify-content:center;
+    }
+    .technolgyBody .techNavbar{
+        height: 300px;
+    }
+    .technolgyBody .techNavbar button{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .technologycontentarea h5{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .technologycontentarea h2{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .technologycontentarea p{
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+    .navbarAndcontentarea{
+        display: flex;
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
+    }
+    .technolgyBody .technologypicture{
+        width: 500px;
+        height: 320px;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
     body{
         overflow: hidden;
     }
     nav{
-        height: 90px;
+        height: 60px;
         margin-top: 0;
     }
     nav .home-logo{
-        margin-left: 50px;
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
     }
     nav .navigation{
         width: 75%;
@@ -175,7 +354,7 @@
         flex: 1;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 500;
         margin:0;
     }
@@ -191,6 +370,12 @@
     nav .navigation ul li:nth-child(4)::before{
         content: "";
     }
+    nav .navigation ul a{
+        color: var(--secondary-color);
+        text-decoration: none;
+        letter-spacing: 3px;
+        padding: 14px 0;
+    }
     .home{
         padding: 50px 50px 0 20px;
         background: url('./assets/home/background-home-tablet.jpg') no-repeat center / cover;
@@ -204,36 +389,52 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 150px;
     }
     .home .content-text h1{
-        font-size: 150px;
+        font-size: 70px;
         font-weight: 500;
         margin: 10px 0;
     }
     .home .content-text h4{
-        font-size: 20px;
-        margin-top: 40px;
+        font-size: 17px;
     }
     .home .content-text h5{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
+        line-height: 30px;
         padding: 0 50px;
+        text-align: center;
     }
     .home .ExploreIcon{
-        margin-left: 0;
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        height: 200px;
+        margin-left:0;
+    }
+    .home .ExploreIcon .content-explore{
+        width: 100px;
+        height: 100px;
     }
     .ExploreIcon .content-explore h5{
-        left: 70%;
+        left: 60%;
+        font-size: 18px;
     }
 
     /* Destination section */
 
     .destination{
-        padding:160px 70px 0 70px ;
+        padding:0 0 20px 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
     }
     .destination h4{
-        font-size: 25px;
+        font-size: 16px;
+        position: absolute;
+        top: 100px;
+        left: 30px;
     }
     .destination .destinationcontent{
         display: flex;
@@ -241,12 +442,13 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 500px;
-        margin-top:0;
+        min-height: 400px;
+        margin-top:100px;
     }
     .destinationcontent .planetIcon{
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
+
     }
     .destinationcontent .destinationNavigation{
         display: flex;
@@ -256,26 +458,34 @@
         padding: 0 15px;
     }
     .destinationNavigation .navbar{
-        height: 80px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .destinationNavigation .navbar ul{
         gap: 20px;
-        font-size: 26px;
-        letter-spacing: 2px;
-        font-weight: 500;
+        font-size: 18px;
+        padding: 0;
+    }
+    .destinationNavigation .navbar a{
+        line-height: 20px;
     }
     .destinationNavigation h2{
         margin: 10px 0;
+        font-size: 30px;
         text-align: center;
     }
     .destinationNavigation p{
-        margin: 10px 0;
+        font-size: 14px;
+        line-height: 25px;
+        margin: 10px 0 0 0 ;
         text-align: center;
     }
     .destinationNavigation h5{
+        font-size: 18px;
+        line-height: 30px;
+        width: 200px;
         text-align: center;
     }
     .area-distance{
@@ -288,15 +498,27 @@
     /* crew section */
 
     .Crew{
-        padding: 150px 20px 0 20px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
     .Crew .crewBody{
         flex-direction: column;
-        padding-right: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
     }
     .Crew .crewBody .crewbodycontent{
         width: 100%;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);     
+
     }
     .Crew .crewComander{
         padding: 0 20px;
@@ -305,25 +527,33 @@
         padding:5px 20px;
         margin-top: 30px;
         min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        align-items: center;
+        justify-content: center;
     }
     .crewComander h4{
-        font-size: 26px;
+        font-size: 17px;
         position: absolute;
+        top: 40px;
     }
     .crewComander h3{
         font-size: 20px;
-        margin-bottom: 10px;
+        margin:10px 0;
     }
     .crewComander h1{
-        font-size: 35px;
+        font-size: 27px;
+        margin: 10px 0;
     }
     .crewComander p{
-        margin: 25px 0;
+        margin: 10px 0 0 0 ;
         padding: 0 60px;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 25px;
     }
     .crewbodycontent .crewnavigation{
-        margin-top: 30px;
+        margin-top: 10px;
         padding: 0;
         display: flex;
         justify-content: center;
@@ -332,6 +562,13 @@
     .crewpictureforalignment{
         height: 400px;
         width: 100%;
+    }
+    .crewBody .crewPicture{
+        width:300px;
+        height: 350px;
+        position: absolute;
+        bottom: -20px;
+        left: 30%;
     }
 
     /* Technology section */
@@ -400,7 +637,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     body{
         overflow: scroll;
     }
@@ -417,39 +654,39 @@
         margin-left:0;
     }
     nav .navigation{
-       position: absolute;
-       width: 100%;
-       height: 100vh;
-       top:0;
-       right: 0;
-       padding:100px 20px 0 20px;
-       margin: 0;
-       border-radius:0;
-       background-color: #414040f3;
-       justify-content:center;
-       align-items: center;
-       display: none;
+        display: none;
     }
-    nav .navigation::before{
-       display: none;
+    nav .navigationMobile{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 900px;
+        background-color: rgba(0, 0, 0, .95);
     }
-    nav .navigation ul{
+    nav .navigationMobile ul{
+        display: flex;
         flex-direction: column;
-        flex: 1;
-        justify-content: center;
-        align-items:center;
-        font-size: 35px;
-        gap: 35px;
-        text-shadow: 0 0 30px #141414dc;
-        margin-top: 150px;
-
+        font-size: 25px;
+        font-family: var(--font-h1);
+        letter-spacing: 3.5px;
+        text-shadow: 0 0 3rem rgba(39, 11, 11, 0.95) ;
+        margin-top:120px;
+        gap: 30px;
+        padding-left: 20px;
     }
-    nav .navigation ul a:hover{
-        border-bottom: none;
-        transform: none;
+    nav .navigationMobile ul li{
+       list-style: none;
+    }
+    nav .navigationMobile ul li a{
+        color: var(--secondary-color);
+        text-decoration: none;
+        text-transform: uppercase;
     }
     .menuIcon{
         top: 25px;
+        right: 10px;
         display:block;
     }
     nav .navigation ul a{
@@ -469,32 +706,46 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        margin-left: -40px;
+        margin-top: 60px;
+    }
+    .home .content-text h4{
+        font-size: 20px;
     }
     .home .content-text h1{
-        font-size: 100px;
+        font-size: 60px;
     }
     .home .content-text h5{
-        padding: 0 170px;
-        width: 100%;
+        padding: 0;
+        width: 90%;
     }
     .home .ExploreIcon{
-        margin-left: 0;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+        margin-left: 0; 
+    }
+    .home .ExploreIcon .content-explore{
+        width: 150px;
+        height: 150px;
     }
     .ExploreIcon .content-explore h5{
-        left: 70%;
+        left: 65%;
+        font-size: 27px;
     }
 
     /* Destination section */
 
     .destination{
-        padding:0 100px;
+        padding:10px 0;
         justify-content: center;
+        align-items: center;
         overflow: scroll;
     }
     .destination h4{
-        font-size: 22px;
+        font-size: 17px;
         text-align: center;
+        margin-top: 40px;
     }
     .destination .destinationcontent{
         display: flex;
@@ -502,7 +753,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 500px;
+        min-height: 300px;
         margin-top:0;
     }
     .destinationcontent .planetIcon{
@@ -514,6 +765,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%;
         padding: 0 15px;
     }
     .destinationNavigation .navbar{
@@ -524,26 +776,31 @@
     }
     .destinationNavigation .navbar ul{
         gap: 20px;
-        font-size: 26px;
+        font-size: 18px;
         letter-spacing: 2px;
         font-weight: 500;
     }
     .destinationNavigation h2{
-        margin: 5px 0;
+        margin: 10px 0;
+        font-size: 30px;
         text-align: center;
     }
     .destinationNavigation p{
-        margin:0;
-        padding: 0 40px;
+        margin:10px 0;
+        padding: 10px 5px;
+        font-size: 16px;
+        min-height: 200px;
         text-align: center;
     }
     .destinationNavigation h5{
         text-align: center;
+        font-size: 22px;
+        line-height: 28px;
     }
     .area-distance::before{
         content: "";
-        width: 90%;
-        height: 3px;
+        width: 96%;
+        height: 1px;
         background-color:  rgba(255, 255, 255, 0.4);
     }
     .area-distance{
@@ -563,7 +820,7 @@
     .Crew .crewBody{
         flex-direction: column-reverse;
         justify-content: center;
-        padding:100px 0 0 0 ;
+        padding:0;
     }
     .Crew .crewBody .crewbodycontent{
         width: 100%;
@@ -575,44 +832,53 @@
         padding: 0 20px;
     }
     .crewComander .crewcontentall{
-        padding:5px 20px;
+        padding: 0;
+        width: 100%;
+        margin-bottom: -30px;
         min-height: 100px;
     }
     .crewComander h4{
-        font-size: 26px;
+        font-size: 17px;
         position: absolute;
         top: 50px;
         left: 25%;
     }
     .crewComander h3{
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .crewComander h1{
-        font-size: 35px;
+        font-size: 26px;
     }
     .crewComander p{
-        margin: 25px 0;
-        padding: 0 20px;
-        font-size: 16px;
+        margin: 10px 0;
+        padding: 0 10px;
+        line-height: 25px;
+        font-size: 14px;
     }
     .crewbodycontent .crewnavigation{
-        margin-top:10px;
+        margin-top:0;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .crewnavigation button{
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
     .crewpictureforalignment{
-        height: 400px;
+        height: 250px;
         width: 100%;
+        margin-bottom: -40px;
     }
     .crewpictureforalignment::after{
         content:"";
         height: 1px;
         width: 90%;
         background-color:rgba(255, 255, 255, 0.3);
-       margin-left: 35px;
+        align-self: center;
 
     }
 
@@ -684,5 +950,34 @@
         padding: 0 150px;
         line-height: 30px;
         text-align: center;
+    }
+}
+@media screen and (max-width: 768px) and (max-height: 768px){
+    .destinationcontent .planetIcon{
+        width: 190px;
+        height: 200px;
+    }
+    .destinationNavigation p{
+        margin:0;
+        padding: 0 5px;
+        font-size: 16px;
+        min-height: 200px;
+        text-align: center;
+    }
+    .destinationNavigation h5{
+        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .area-distance::before{
+        margin-top: -20px;
+    }
+    .area-distance{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
     }
 }

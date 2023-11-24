@@ -20,6 +20,7 @@ body{
 .hidden{
     display: none !important;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -105,6 +106,9 @@ nav .navigation ul a:hover{
     border-bottom: 3px solid var(--secondary-color);
     transform: scale(1.15);
 }
+nav .navigationMobile{
+    display: none;
+}
 .menuIcon{
     position: absolute;
     right: 50px;
@@ -124,8 +128,8 @@ nav .navigation ul a:hover{
     background: url('./assets/home/background-home-desktop.jpg') no-repeat center / cover;
 }
 .home .content-text{
-    width: 800px;
-    min-height: 400px;
+    width: 100%;
+    min-height: 100px;
     color: var(--secondary-color);
     padding-top: 40px;
 }
@@ -145,11 +149,11 @@ nav .navigation ul a:hover{
 }
 .home .content-text h5{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 3px;
     line-height: 40px;
     font-family:var(--font-p);
-    min-height: 400px;
+    min-height: 100px;
 }
 .home > .content-text{
     transform: translateX(20px);
@@ -311,7 +315,7 @@ nav .navigation ul a:hover{
 }
 .destinationcontent .destinationNavigation{
     width: 700px;
-    min-height: 500px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -354,10 +358,10 @@ nav .navigation ul a:hover{
     line-height: 45px;
 }
 .destinationNavigation .navbar a.active {
-    border-bottom: 6px solid rgba(241, 238, 238, 0.7);
+    border-bottom: 3px solid rgba(241, 238, 238, 0.7);
 }
 .destinationNavigation .navbar a:hover{
-    border-bottom: 5px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
 }

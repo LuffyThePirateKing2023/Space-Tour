@@ -1,11 +1,20 @@
 
 const navLinkIds = ['navHome', 'navDestination', 'navCrew', 'navTechnology'];
+const navLinkIdsMobile = ['navHomeMobile', 'navDestinationMobile', 'navCrewMobile', 'navTechnologyMobile'];
 const sectionIds = ['home', 'destination', 'Crew', 'technology'];
 
 const navLinks = navLinkIds.map(id => document.getElementById(id));
+const navLinksMobile = navLinkIdsMobile.map(id => document.getElementById(id));
 const sections = sectionIds.map(id => document.getElementById(id));
 
 navLinks.forEach((link, index) => {
+  link.addEventListener('click', () => {
+    sections.forEach((section, i) => {
+      section.classList.toggle('hidden', i !== index);
+    });
+  });
+});
+navLinksMobile.forEach((link, index) => {
   link.addEventListener('click', () => {
     sections.forEach((section, i) => {
       section.classList.toggle('hidden', i !== index);
@@ -72,16 +81,37 @@ btns.forEach((btn, index) => {
   btn.addEventListener('click', () => handleButtonClick(index));
 });
 
-// const menuIcon = document.getElementById('menuIcon');
-// const navigationIcon = document.getElementById('homeNav');
 
-// menuIcon.addEventListener('click', () => {
-//   if(navigationIcon.style.display === 'none'){
-//     navigationIcon.style.display = 'block';
-//     menuIcon.src = "./assets/shared/icon-close.png";
-//   }else{
-//     navigationIcon.style.display = 'none';
-//     menuIcon.src = "./assets/shared/icon-hamburger.png";
-//   }
-// });
+
+
+
+const menuIcon = document.getElementById('menuIcon');
+const navigationIcon = document.getElementById('homeNavMobile');
+
+menuIcon.addEventListener('click', () => {
+  if (navigationIcon.style.display === 'none') {
+    navigationIcon.style.display = 'block';
+    menuIcon.src = "./assets/shared/icon-close.png";
+  } else {
+    navigationIcon.style.display = 'none';
+    menuIcon.src = "./assets/shared/icon-hamburger.png";
+  }
+});
+
+document.addEventListener('click', (event) => {
+  const navigationHandler = navigationIcon.contains(event.target);
+  const menuIconHandler = event.target === menuIcon;
+
+  if (!navigationHandler && !menuIconHandler) {
+    navigationIcon.style.display = 'none';
+    menuIcon.src = "./assets/shared/icon-hamburger.png";
+  }
+});
+
+navigationIcon.addEventListener('click', (event) => {
+  if (event.target.tagName.toLowerCase() === 'a') {
+    navigationIcon.style.display = 'none';
+    menuIcon.src = "./assets/shared/icon-hamburger.png";
+  }
+});
 
